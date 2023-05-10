@@ -1,0 +1,146 @@
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+  --clr-helllila: #6a1cc3;
+  --clr-name: #fbfbfb;
+  --clr-background: #e5e5e5;
+}
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container {
+  background-color: var(--clr-helllila);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.list {
+  margin: 10%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  color: var(--clr-name);
+  font-size: 16px;
+}
+
+h2,
+.fellow-student {
+  font-size: 18px;
+  margin: 4%;
+  font-weight: bolder;
+}
+
+h2 {
+  color: var(--clr-helllila);
+}
+.fellow-student {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid var(--clr-helllila);
+  border-radius: 3px;
+  width: 80%;
+  padding: 6px;
+  color: var(--clr-helllila);
+}
+
+.figure {
+  background-color: #8849cf;
+  padding: 8px;
+  border-radius: 4px;
+  position: absolute;
+  margin: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+
+.select-form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-icon {
+  position: relative;
+  right: -430px;
+  top: -25px;
+}
+
+h4,
+p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  color: var(--clr-helllila);
+  margin: 10px;
+  margin-left: -40%;
+}
+
+p {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.students div {
+  display: grid;
+  grid-template-rows: auto;
+  border: 2px solid var(--clr-helllila);
+  margin: 4%;
+  position: relative;
+  font-weight: bold;
+}
+
+.students div::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  left: 0px;
+  right: -2px;
+  bottom: -0px;
+  box-shadow: 2px 5px var(--clr-helllila);
+}
+
+h3 {
+  margin: 4%;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 5%;
+}
+
+::placeholder {
+  color: var(--clr-helllila);
+  opacity: 0.4;
+  font-weight: bold;
+  padding: 10px;
+}
